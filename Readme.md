@@ -1,4 +1,4 @@
-#  Efeective C++
+#  Effective C++
 쥬신 게임 클라이언트 프로그래밍 학원을 다니며 Effective C++을 읽고 정리한 내용입니다.
 
 ---
