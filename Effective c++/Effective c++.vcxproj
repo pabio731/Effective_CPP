@@ -143,8 +143,9 @@
     <ClCompile Include="1-2 define을 쓰기전에 const, enum, inline을 먼저 생각하자.cpp" />
     <ClCompile Include="1-3 const를 적극 사용하자.cpp" />
     <ClCompile Include="1-4 객체를 반드시 초기화하자.cpp" />
-    <ClCompile Include="C++이 은근슬쩍 만들어 호출하는 함수들.cpp" />
+    <ClCompile Include="2-1 C++이 은근슬쩍 만들어 호출하는 함수들.cpp" />
     <ClCompile Include="README.md" />
+    <ClCompile Include="2-2 컴파일러가 만들어낸 함수가 필요없으면 사용을 금지해버리자.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

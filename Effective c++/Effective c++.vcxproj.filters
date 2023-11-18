@@ -36,7 +36,10 @@
     <ClCompile Include="1-4 객체를 반드시 초기화하자.cpp">
       <Filter>소스 파일\Chapter1</Filter>
     </ClCompile>
-    <ClCompile Include="C++이 은근슬쩍 만들어 호출하는 함수들.cpp">
+    <ClCompile Include="2-1 C++이 은근슬쩍 만들어 호출하는 함수들.cpp">
+      <Filter>소스 파일\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="2-2 컴파일러가 만들어낸 함수가 필요없으면 사용을 금지해버리자.cpp">
       <Filter>소스 파일\Chapter2</Filter>
     </ClCompile>
   </ItemGroup>
