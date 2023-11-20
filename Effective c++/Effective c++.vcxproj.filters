@@ -42,5 +42,11 @@
     <ClCompile Include="2-2 컴파일러가 만들어낸 함수가 필요없으면 사용을 금지해버리자.cpp">
       <Filter>소스 파일\Chapter2</Filter>
     </ClCompile>
+    <ClCompile Include="2-3 다형성을 가진 기본 클래스의 소멸자는 가상 소멸자로.cpp">
+      <Filter>소스 파일\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="2-4 예외가 소멸자를 떠나지 못하도록하자.cpp">
+      <Filter>소스 파일\Chapter2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
