@@ -48,5 +48,11 @@
     <ClCompile Include="2-4 예외가 소멸자를 떠나지 못하도록하자.cpp">
       <Filter>소스 파일\Chapter2</Filter>
     </ClCompile>
+    <ClCompile Include="2-5 객체 생성 및 소멸 과정 중에는 가상 함수를 호출하지 말자.cpp">
+      <Filter>소스 파일\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="2-6 대입 연산자는 this의 참조자를 반환하게 하자.cpp">
+      <Filter>소스 파일\Chapter2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
