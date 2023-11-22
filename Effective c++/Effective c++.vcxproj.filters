@@ -54,5 +54,11 @@
     <ClCompile Include="2-6 대입 연산자는 this의 참조자를 반환하게 하자.cpp">
       <Filter>소스 파일\Chapter2</Filter>
     </ClCompile>
+    <ClCompile Include="2-7 대입 연산자 오버로딩에서는 자기대입에 대한 처리를 꼭 하자.cpp">
+      <Filter>소스 파일\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="2-8 객체의 모든 부분을 빠짐없이 복사하자.cpp">
+      <Filter>소스 파일\Chapter2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
