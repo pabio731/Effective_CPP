@@ -15,19 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3-1 자원 관리 객체를 만들어 쓰자.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="3-2 자원 관리 클래스의 복사 동작에 대해 생각하자.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="3-3 자원 관리 클래스에서 관리되는 자원은 접근 가능하도록 하자.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="3-4 new,delete를 사용할 때는 형태를 반드시 맞추자.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="- 3-5 new로 생성한 객체를 스마트 포인터에 저장하는 코드는 별도의 문장으로.cpp">
+    <ClCompile Include="- 4-1 인터페이스 설계는 제대로 쓰기에 쉽게, 엉터리로 쓰기엔 어렵게 만들자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
