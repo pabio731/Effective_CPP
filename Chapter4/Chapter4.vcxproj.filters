@@ -24,5 +24,11 @@
     <ClCompile Include="4-3 상수 객체 참조자에 의한 전달 방식을 쓰자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="4-4 함수에서 객체를 반환해야 할 경우 참조자를 반환하려하지 말자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4-5 데이터 멤버는 private에 선언하자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
