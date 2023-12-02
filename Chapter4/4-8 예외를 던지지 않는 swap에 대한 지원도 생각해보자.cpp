@@ -42,7 +42,7 @@ private:
 //public:
 //	Widget(const Widget& rhs);
 //
-//	Widget& operator=(const Widget& rhs)		//Widget을 복사하기 위해, 자신읜 WidgetImpl 객체를 복사한다.
+//	Widget& operator=(const Widget& rhs)		//Widget을 복사하기 위해, 자신의 WidgetImpl 객체를 복사한다.
 //	{
 //		//...
 //		*pImpl = *(rhs.pImpl);
@@ -57,13 +57,13 @@ private:
 	똑같이 Widget객체를 3개 복사하고, WidgetImpl 객체 3개도 복사할 것이다.
 
 	따라서 조금 Swap 함수에 무언가를 알려줘 조금 손을 보자.
-	내부의 포인터만 바꿀라는 방법으로 std::swap을 Widget에 대해 특수화 하는것.
+	내부의 포인터만 바꾸라는 방법으로 std::swap을 Widget에 대해 특수화 하는것.
 */
 
 //namespace std
 //{
 //	template<>
-//	void swap<Widget>(Widget& a, Widget& b)	 // T가 Widget일 경우에 대해 특수화 한것 (아직 컴파일 안됌)
+//	void swap<Widget>(Widget& a, Widget& b)	 // T가 Widget일 경우에 대해 특수화 한것 (아직 컴파일 X)
 //	{
 //		swap(a.pImpl, b, pImpl);
 //	}
@@ -72,19 +72,20 @@ private:
 /*
 	일단 시작부의 template<> 는 이 함수가 std::swap의 완전 템플릿 특수화 함수라는 것을 컴파일러에게
 	알려주는 부분이다. 그리고 함수 이름뒤에 <Widget>은 T가 Widget일 경우에 대한 특수화라는 것을 알려주는 부분
-	다시 말해 타입이 무관한 Swap템플릿이 Widget에 적용될 때는 위의 함수 구현을 사용해야 한다는 뜻.
+	다시 말해 타입이 무관한 swap템플릿이 Widget에 적용될 때는 위의 함수 구현을 사용해야 한다는 뜻.
 	일반적으로 std네임스페이스의 구성요소는 함부러 변경할 수 없지만, 프로그래머가 직접 만든 타입에 대해
 	표준 템플릿을 특수화 하는 것을 허용이 된다.
 
 	하지만 위의 코드는 pImpl 변수가 private멤버기 때문에 컴파일이 안되는데, 일단 위 함수를
 	프렌드 함수로 만드는 것은 표준 템플릿들에 쓰인 규칙과 어긋나므로 좋은 모양은 아니다.
-	따라서 Widget 안에 Swap이라는 public 멤버 함수를 선언하고 그 함수가 실제 맞바꾸기를 수행도록 만든 후
+	따라서 Widget 안에 swap이라는 public 멤버 함수를 선언하고 그 함수가 실제 맞바꾸기를 수행도록 만든 후
 	std::swap특수화 함수에게 그 멤버 함수를 호출하는 일을 맡김.
 */
-class Widget
+
+class Widget2
 {
 public:
-	void swap(Widget& other)
+	void swap(Widget2& other)
 	{
 		using std::swap;
 
@@ -95,10 +96,10 @@ private:
 	WidgetImpl* pImpl;
 };
 
-namespace std
+namespace std2
 {
 	template<>
-	void swap<Widget>(Widget& a, Widget& b)	// 템플릿의 특수화도 살짝 고침.
+	void swap<Widget>(Widget2& a, Widget2& b)	// 템플릿의 특수화도 살짝 고침.
 	{
 		a.swap(b);	//Widget을 맞바꾸기 위해
 	}
@@ -114,29 +115,28 @@ namespace std
 */
 
 template<typename T>
-class WidgetImpl2 {};
+class WidgetImpl3 {};
 template<typename T>
-class Widget {};
+class Widget3 {};
 
-/*
-	swap 멤버 함수를 Widget에 넣는 정도는 어렵지 않지만 swap을 특수화 하는 것이 어렵다.
+//swap 멤버 함수를 Widget에 넣는 정도는 어렵지 않지만 swap을 특수화 하는 것이 어렵다.
 
-	nmaespace std
+namespace std3
+{
+	template<typename T>
+	void swap<Widget3<T>>(Widget3<T>& a, Widget3<T>& b) // 적법하지 않은 코드
 	{
-		template<typename T>
-		void swap<Widget<T>> (Widget<T>& a, Widget<T>& b)	/적법하지 않은 코드
-		{
-			a.swap(b);
-		}
+		a.swap(b);
 	}
+}
 
-	C++에서는 클래스 템플릿에 대해서는 부분 특수화를 허용하지만 함수 템플릿에 대해서는
+/*C++에서는 클래스 템플릿에 대해서는 부분 특수화를 허용하지만 함수 템플릿에 대해서는
 	허용하지 않도록 정해져 있다. 따라서 컴파일이 되지 않는다.
 
 	함수 템플릿을 "부분적으로 특수화"하고 싶다면 흔히 오버로드 버전을 하나 추가하는 것이다.
-
 */
-namespace std
+
+namespace std4
 {
 	template<typename T>
 	void swap(Widget<T>& a, Widget<T>& b)
