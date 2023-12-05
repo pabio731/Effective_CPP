@@ -165,7 +165,8 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="5-4 예외 안정성을 확보하기 위해 싸우자.cpp" />
+    <ClCompile Include="5-5 인라인 함수는 잘 이해해두자.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />

@@ -24,7 +24,10 @@
     <ClCompile Include="5-3 내부에서 사용하는 객체에 대한 핸들을 반환하는 코드는 되도록 피하자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Test.cpp">
+    <ClCompile Include="5-4 예외 안정성을 확보하기 위해 싸우자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5-5 인라인 함수는 잘 이해해두자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
