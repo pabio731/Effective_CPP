@@ -30,6 +30,9 @@
     <ClCompile Include="5-5 인라인 함수는 잘 이해해두자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="5-6 파일 사아의 컴파일 의존성을 최대한 줄이자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
