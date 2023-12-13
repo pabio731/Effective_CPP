@@ -24,6 +24,15 @@
     <ClCompile Include="6-3 구현 상속과 인터페이스 상속의 차이를 제대로 알자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="6-4 가상 함수 대신 쓸 것들도 생각해주자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6-5 상속받은 비가상 함수를 파생 클래스애서 재정의하는 것은 금물.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6-6 어떤 함수에 대해서도 상속받은 기본 매개변수 값은 재정의하지 말자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
