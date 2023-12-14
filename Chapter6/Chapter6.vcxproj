@@ -176,6 +176,8 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="6-6 어떤 함수에 대해서도 상속받은 기본 매개변수 값은 재정의하지 말자.cpp" />
+    <ClCompile Include="6-7 has-a 혹은 is-implemented-in-terms-of를 모형화 할때는 객체 합성을 사용하자.cpp" />
+    <ClCompile Include="6-8 private 상속은 심사숙고해서 쓰자.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
