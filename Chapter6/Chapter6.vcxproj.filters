@@ -39,6 +39,9 @@
     <ClCompile Include="6-8 private 상속은 심사숙고해서 쓰자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="6-9 다중 상속은 심사숙고해서 쓰자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
