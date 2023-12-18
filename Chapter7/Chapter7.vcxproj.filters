@@ -18,6 +18,12 @@
     <ClCompile Include="7-1 템플릿 프로그래밍은 암시적 인터페이스와 컴파일 타임 다형성부터.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="7-2 typename의 두 가지 의미를 제대로 파악하자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="7-3 템플릿으로 만든 기본 클래스안의 이름에 접근하는 법.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
