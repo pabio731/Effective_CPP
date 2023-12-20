@@ -24,6 +24,12 @@
     <ClCompile Include="7-3 템플릿으로 만든 기본 클래스안의 이름에 접근하는 법.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="7-4 매개변수에 독립적인 코드는 템플릿으로부터 분리시키자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="7-5 호환되는 모든 타입을 받아들이는 데는 함수 템플릿!.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
