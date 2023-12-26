@@ -30,6 +30,15 @@
     <ClCompile Include="7-5 호환되는 모든 타입을 받아들이는 데는 함수 템플릿!.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="7-6 타입 변환이 바람직할 경우 비멤버 함수를 클래스 템플릿 안에 정의해두자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="7-7 타입에 대한 정보가 필요하다면 특성정보 클래스를 사용하자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="7-8 템플릿 메타프로그래밍을 하자!.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
